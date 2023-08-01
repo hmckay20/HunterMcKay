@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'This is my app';
-  showImage = false;
-  toggleImage(): void {
-    this.showImage = !this.showImage;
-  }
+  interns: any[] = [];
 
+  constructor(private firestore: AngularFirestore) {
+    firestore.collection('interns').valueChanges().subscribe(data => {
+      this.interns = data;
+    });
+  }
 }

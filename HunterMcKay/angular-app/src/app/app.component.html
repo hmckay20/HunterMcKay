@@ -1,17 +1,9 @@
-<div class="header">
-    <a href="#default" class="logo">CompanyLogo</a>
-    <div class="header-right">
-      <a class="active" href="#home">Home</a>
-      <a href="#resume">Contact</a>
-      <a href="#about">About</a>
-    </div>
-  </div>
-<main>
-    <h1>{{ title }}</h1>
 
-    <div class="image-container">
-        <button (click)="showImage=!showImage">Hey shhhh, Seth click right here</button>
-        <img *ngIf="!showImage" src="/assets/Resume.jpg" alt="Resume" id="resume">
-        <img *ngIf="showImage" id="myImage" src="assets/pi7rkyEyT.jpg">
-    </div>
-</main>
+
+  <div class="interns" *ngFor="let intern of interns" >
+    <h2>{{ intern.name }}</h2>
+    <p>{{ intern.job }}</p>
+    <p>{{ intern.experience }}</p>
+  </div>
+
+
