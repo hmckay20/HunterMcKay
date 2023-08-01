@@ -12,18 +12,9 @@
     }
   }
 body {
-
-
- 
-
-
-
     background-image: url('/assets/pexels-pixabay-326333.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-
-
-
   }
   
   h1 {
@@ -37,14 +28,45 @@ body {
     text-align: center;
   }
   
-
-
-
-.interns{
-  padding: 40px;
-align-content: center;
-color: white;
-
-
-
+#job{
+  text-align: left;
 }
+
+
+  .interns {
+ 
+    padding: 20px; /* decrease padding */
+    width: 50%; /* explicit width */
+    color: white;
+    box-sizing: border-box; /* include padding and border in element's total width */
+    margin: 0 auto; /* center the boxes */
+    background-color: rgb(43, 173, 49);
+    border-radius: 25px;
+    background-image: url('/assets/blue.jpg');
+    .intern-image{
+      width:80px;
+      height: 80px;
+      border-radius: 50px;
+    }
+    #name, #job{
+      padding: 0;
+      margin: 0;
+    }
+  }
+  
+  .interns:nth-child(even) {
+    /* style for odd boxes (1st, 3rd, 5th, etc.) */
+    margin-right: auto;
+    margin-left: 0;
+  }
+  
+  .interns:nth-child(odd) {
+    /* style for even boxes (2nd, 4th, 6th, etc.) */
+    margin-left: auto;
+    margin-right: 0;
+  }
+  header{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }

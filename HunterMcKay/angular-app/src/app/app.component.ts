@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   interns: any[] = [];
-
+  title: string = 'The 2023 FCSA Interns';
   constructor(private firestore: AngularFirestore) {
     firestore.collection('interns').valueChanges().subscribe(data => {
       this.interns = data;
