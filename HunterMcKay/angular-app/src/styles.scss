@@ -12,20 +12,37 @@
     }
   }
 body {
-    background-image: url('/assets/pexels-pixabay-326333.jpg');
+    background-image: url('/assets/farm.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
   }
   
   h1 {
     color: white;
     text-align: center;
-    padding:40px;
+    padding-bottom:40px;
   }
   
 
 #job{
   text-align: left;
+}
+.team {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  width: 80%; /* default width */
+  height: auto;
+  padding: 20px;
+}
+
+/* apply when the viewport is 700px or less */
+@media screen and (max-width: 700px) {
+  .team {
+    width: 100%; /* width for smaller screens */
+  }
 }
 
 
@@ -40,7 +57,7 @@ body {
     border-radius: 25px;
     background-image: url('/assets/blue.jpg');
     .intern-image{
-      width:60px;
+      width:62px;
       height: 80px;
       border-radius: 60px;
     }
@@ -67,3 +84,8 @@ body {
     text-align: center;
     font-size: 50px;
   }
+  #thanks{
+    color: white;
+    text-align: center;
+  }
+ 

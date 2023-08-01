@@ -1,7 +1,12 @@
 
 <header>
   {{title}}
+  
 </header>
+
+<div id="thanks">and a big shoutout to Kari, Sydney, Dhaval, and Sandeep</div>
+<div><img class="team" src="assets/team.jpg" alt="picture of team"></div>
+
   <div class="interns" *ngFor="let intern of interns" >
     <img class="intern-image" [src]="intern.picture" alt="Picture of Intern">
     <h2 id="name">{{ intern.name }}</h2>
