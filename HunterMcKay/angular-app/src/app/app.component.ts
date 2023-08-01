@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'My angular app';
+  title = 'This is my app';
+  showImage = false;
+  toggleImage(): void {
+    this.showImage = !this.showImage;
+  }
+
 }
