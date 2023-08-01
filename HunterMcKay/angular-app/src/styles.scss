@@ -23,11 +23,7 @@ body {
     padding:40px;
   }
   
-  p {
-    color: white;
-    text-align: center;
-  }
-  
+
 #job{
   text-align: left;
 }
@@ -44,13 +40,14 @@ body {
     border-radius: 25px;
     background-image: url('/assets/blue.jpg');
     .intern-image{
-      width:80px;
+      width:60px;
       height: 80px;
-      border-radius: 50px;
+      border-radius: 60px;
     }
-    #name, #job{
-      padding: 0;
+    #name, #job, #location{
+      padding: 1px;
       margin: 0;
+      align-content: left;
     }
   }
   
