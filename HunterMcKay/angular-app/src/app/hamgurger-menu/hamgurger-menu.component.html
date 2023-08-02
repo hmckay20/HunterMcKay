@@ -1,0 +1,10 @@
+<button (click)="isMenuOpen = !isMenuOpen">
+    <!-- The hamburger icon: three horizontal lines -->
+    &#9776;
+  </button>
+  
+  <div *ngIf="isMenuOpen" class="dropdown-menu">
+   <p><a (click)="closeMenu()" routerLink="/home">Home</a></p>
+    <p><a (click)="closeMenu()" routerLink="/pictures">Pictures</a></p>
+  </div>
+  

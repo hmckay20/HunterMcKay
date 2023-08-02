@@ -1,18 +1,7 @@
+<app-hamgurger-menu></app-hamgurger-menu>
 
-<header>
-  {{title}}
-  
-</header>
+<!-- Your header or navbar here -->
 
-<div id="thanks">and a big shoutout to Kari, Sydney, Dhaval, and Sandeep</div>
-<div><img class="team" src="assets/team.jpg" alt="picture of team"></div>
+<router-outlet></router-outlet>
 
-  <div class="interns" *ngFor="let intern of interns" >
-    <img class="intern-image" [src]="intern.picture" alt="Picture of Intern">
-    <h2 id="name">{{ intern.name }}</h2>
-    <p id="job">{{ intern.job }}</p>
-    <p id="location">{{intern.location}}</p>
-    <p>{{ intern.experience }}</p>
-  </div>
-
-
+<!-- Your footer here -->

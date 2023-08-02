@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+
 import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { HamgurgerMenuComponent } from './hamgurger-menu/hamgurger-menu.component';
+import { HamgurgerMenuComponent } from '../hamgurger-menu/hamgurger-menu.component';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home-component',
+  templateUrl: './home-component.component.html',
+  styleUrls: ['./home-component.component.scss']
 })
-export class AppComponent {
+export class HomeComponentComponent {
   interns: any[] = [];
   title: string = 'The 2023 FCSA Interns';
   constructor(private firestore: AngularFirestore) {
