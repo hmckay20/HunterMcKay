@@ -15,7 +15,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-using Google.Cloud.Firestore;
+
 app.UseRouting();
 
 app.UseAuthorization();

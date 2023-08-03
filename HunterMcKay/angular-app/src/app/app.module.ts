@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
 import { HamgurgerMenuComponent } from './hamgurger-menu/hamgurger-menu.component';
 import { PicturesPageComponent } from './pictures-page/pictures-page.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +28,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

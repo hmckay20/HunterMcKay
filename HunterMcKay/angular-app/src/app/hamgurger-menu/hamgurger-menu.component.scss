@@ -1,27 +1,29 @@
-button {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1cm;
-    height: 1cm;
-  }
+
+
+  
   a{
     color: white;
   }
   
   .dropdown-menu {
     position: absolute;
-    top: 50px;
+    top: 66px;
     left: 0;
-
-    background-color: black;
+    padding: 6px;
+    background-color: gray;
     border: 1px solid white;
   }
-  @media only screen and (max-width: 600px) {
-    .hamburger-button {
-        padding: 100px;
-      width: 100px;
-      height: 100px;
-    }
-  }
+
   
+  .button {
+    top: 0;
+    left: 0;
+    width: 1.5cm;
+    height: 1.5cm;
+   
+    cursor: pointer;
+    @media screen and (max-width: 600px){
+        width: 1cm;
+        height: 1cm;
+    }
+}

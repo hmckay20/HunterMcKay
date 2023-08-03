@@ -16,29 +16,26 @@ h1 {
   width: 80%; /* default width */
   height: auto;
   padding: 20px;
-}
 
-/* apply when the viewport is 700px or less */
-@media screen and (max-width: 700px) {
-  .team {
-    width: 100%; /* width for smaller screens */
-  }
 }
+/* apply when the viewport is 700px or less */
+
 
 
   .interns {
  
     padding: 20px; /* decrease padding */
     width: 50%; /* explicit width */
+  
     color: white;
     box-sizing: border-box; /* include padding and border in element's total width */
     margin: 0 auto; /* center the boxes */
-    background-color: rgb(43, 173, 49);
+    
     border-radius: 25px;
     background-image: url('/assets/blue.jpg');
     .intern-image{
-      width:62px;
-      height: 60px;
+      width:56px;
+      height: 62px;
       border-radius: 60px;
     }
     #name, #job, #location{
@@ -48,13 +45,13 @@ h1 {
     }
   }
   
-  .interns:nth-child(even) {
+  .interns:nth-child(odd) {
     /* style for odd boxes (1st, 3rd, 5th, etc.) */
     margin-right: auto;
     margin-left: 0;
   }
   
-  .interns:nth-child(odd) {
+  .interns:nth-child(even) {
     /* style for even boxes (2nd, 4th, 6th, etc.) */
     margin-left: auto;
     margin-right: 0;
@@ -68,4 +65,30 @@ h1 {
     color: white;
     text-align: center;
   }
+  @media screen and (max-width: 600px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
  
+  }
+  
+  .controls{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+ height: 17px;
+ padding:9px;
+  font-weight: bold;
+    width: 100%;
+
+
+  }
+
+  

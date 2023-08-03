@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-component.component.scss']
 })
 export class HomeComponentComponent {
+  p: number = 1;
   interns: any[] = [];
   title: string = 'The 2023 FCSA Interns';
   constructor(private firestore: AngularFirestore) {
