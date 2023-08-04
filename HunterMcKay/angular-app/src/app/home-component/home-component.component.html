@@ -5,7 +5,9 @@
   
   <div id="thanks">and a big shoutout to Kari, Sydney, Dhaval, and Sandeep</div>
   <div><img class="team" src="assets/team.jpg" alt="picture of team"></div>
+  <div id="header-container">
   <pagination-controls class="controls" (pageChange)="p = $event"></pagination-controls>
+  </div>
     <div class="interns" *ngFor="let intern of interns |paginate: {itemsPerPage: 4, currentPage: p}" >
       <img class="intern-image" [src]="intern.picture" alt="Picture of Intern">
       <h2 id="name">{{ intern.name }}</h2>

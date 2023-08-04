@@ -7,18 +7,21 @@ body {
 
   }
   
-  footer{
+  footer, #header-container{
 
     @media screen {
+      background-color: white;
       margin-left: auto;
       margin-right: auto;
-      
-      width: 50%;
-      min-width: 359px;
-      max-width: 359px;
+      min-width: 498px;
+      max-width: 498px;
       height: 1cm;
       opacity: 80%;
-      background-color: white;
+
       border-radius: 25px;
     }
+}
+#header-container{
+  background-color: white;
+  opacity: 90%;
 }
