@@ -14,12 +14,16 @@ import { HamgurgerMenuComponent } from './hamgurger-menu/hamgurger-menu.componen
 import { PicturesPageComponent } from './pictures-page/pictures-page.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { KariSydneyPageComponent } from './kari-sydney-page/kari-sydney-page.component';
+import { DhavalSandeepPageComponent } from './dhaval-sandeep-page/dhaval-sandeep-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     HamgurgerMenuComponent,
     PicturesPageComponent,
     HomeComponentComponent,
+    KariSydneyPageComponent,
+    DhavalSandeepPageComponent,
 
 
   ],
